@@ -128,5 +128,85 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_divider"
         tools:text="@string/flight_code" />
 
+    <TextView
+        android:id="@+id/tv_boardingTimeLabel"
+        style="@style/styleForLabels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/boarding_time_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_leftRectangle" />
+
+    <TextView
+        android:id="@+id/tv_boardingTime"
+        style="@style/styleForImportantInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_boardingTimeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tv_boardingTimeLabel"
+        tools:text="@string/boarding_time" />
+
+    <TextView
+        android:id="@+id/tv_boardingINLabel"
+        style="@style/styleForLabels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/boarding_in_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_leftRectangle" />
+
+    <TextView
+        android:id="@+id/tv_boardingIN"
+        style="@style/styleForBoardingIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_boardingINLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tv_boardingINLabel"
+        tools:text="@string/boarding_in_time" />
+
+    <TextView
+        android:id="@+id/tv_departureLabel"
+        style="@style/styleForLabels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/departure_time_label"
+        app:layout_constraintStart_toStartOf="@+id/tv_boardingTime"
+        app:layout_constraintTop_toBottomOf="@+id/tv_boardingTime" />
+
+    <TextView
+        android:id="@+id/tv_departure"
+        style="@style/styleForFlightTiming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_departureLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tv_departureLabel"
+        tools:text="@string/departure_time" />
+
+    <TextView
+        android:id="@+id/tv_arrivalLabel"
+        style="@style/styleForLabels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/arrival_time_label"
+        app:layout_constraintStart_toStartOf="@+id/tv_boardingIN"
+        app:layout_constraintTop_toBottomOf="@+id/tv_boardingIN" />
+
+    <TextView
+        android:id="@+id/tv_arrival"
+        style="@style/styleForFlightTiming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_arrivalLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tv_arrivalLabel"
+        tools:text="@string/arrival_time" />
+
 
 </android.support.constraint.ConstraintLayout>
