@@ -8,4 +8,52 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--style for Labels-->
+    <style name="styleForLabels">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Caption</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+
+    <!--style for important info like Passenger Name, Boarding Time, flight code-->
+    <style name="styleForImportantInfo">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Display1</item>
+        <item name="android:textColor">@color/colorSecondaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--style for flight code-->
+    <style name="styleForFlightCode">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Large</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--style for Boarding In-->
+    <style name="styleForBoardingIn">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Display1</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- style for flight timing-->
+    <style name="styleForFlightTiming">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Large</item>
+        <item name="android:textColor">@color/colorGood</item>
+    </style>
+
+    <!-- style for random fields-->
+    <style name="styleForOtherFields">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Large</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <!--style for Image table value like terminal no, gate no and seatno-->
+    <style name="styleForImageTableValue">
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Display2</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">center</item>
+    </style>
+
 </resources>
