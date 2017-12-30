@@ -20,7 +20,7 @@ public class FakeBoardingDataUtils {
 
         BoardingPassInfo bpi = new BoardingPassInfo();
 
-        bpi.passengerName = "MR. SOBHIT PERSON";
+        bpi.passengerName = "MR. SOBHIT KUMAR";
         bpi.flightCode = "XX 777";
         bpi.originCode = "MAA";
         bpi.destCode = "DEL";
