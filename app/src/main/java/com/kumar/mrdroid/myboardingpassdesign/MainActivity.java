@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         mainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+
         BoardingPassInfo fakeBoardingInfo = FakeBoardingDataUtils.generateFakeBoardingPassInfo();
         displayBoardingPassInfo(fakeBoardingInfo);
 
@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
     private void displayBoardingPassInfo(BoardingPassInfo info){
 
          mainBinding.tvPassangerName.setText(info.passengerName);
-         mainBinding.tvSource.setText(info.originCode);
-         mainBinding.tvDestination.setText(info.destCode);
-         mainBinding.tvFlightCode.setText(info.flightCode);
+         mainBinding.flightInfo.tvSource.setText(info.originCode);
+         mainBinding.flightInfo.tvDestination.setText(info.destCode);
+         mainBinding.flightInfo.tvFlightCode.setText(info.flightCode);
 
          // format time in specific format
          SimpleDateFormat formatter= new SimpleDateFormat(getString(R.string.timeFormat), Locale.getDefault());
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
          String departureTime = formatter.format(info.departureTime);
          String arrivalTime = formatter.format(info.arrivalTime);
          
-         mainBinding.tvBoardingTime.setText(boardingTime);
+         mainBinding.flightInfo.tvBoardingTime.setText(boardingTime);
          mainBinding.tvDeparture.setText(departureTime);
          mainBinding.tvArrival.setText(arrivalTime);
 
@@ -55,10 +55,10 @@ public class MainActivity extends AppCompatActivity {
                  hoursUntilBoarding,
                  minutesLessHoursTillBoarding);
 
-         mainBinding.tvBoardingIN.setText(hoursAndMinutesBoarding);
-         mainBinding.tvTerminalNo.setText(info.departureTerminal);
-         mainBinding.tvGate.setText(info.departureGate);
-         mainBinding.tvSeat.setText(info.seatNumber);
+         mainBinding.flightInfo.tvBoardingIN.setText(hoursAndMinutesBoarding);
+         mainBinding.tableLayout.tvTerminalNo.setText(info.departureTerminal);
+         mainBinding.tableLayout.tvGate.setText(info.departureGate);
+         mainBinding.tableLayout.tvSeat.setText(info.seatNumber);
 
     }
 }

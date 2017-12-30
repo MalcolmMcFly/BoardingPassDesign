@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+
+        <ImageView
+            android:id="@+id/iv_tableHeader"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimaryLight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/shape_rectangle_fill_light" />
+
+        <ImageView
+            android:id="@+id/iv_tableImage"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="@+id/iv_tableHeader"
+            app:layout_constraintStart_toStartOf="@+id/iv_tableHeader"
+            app:layout_constraintTop_toBottomOf="@+id/iv_tableHeader"
+            app:srcCompat="@drawable/shape_rectangle_fill_light" />
+
+
+
+        <TextView
+            android:id="@+id/tv_terminalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terminal_label"
+            style="@style/styleForLabels"
+            app:layout_constraintBottom_toTopOf="@+id/tv_gate"
+            app:layout_constraintEnd_toStartOf="@+id/tv_gate"
+            app:layout_constraintStart_toStartOf="@+id/tv_terminalNo"
+            app:layout_constraintTop_toTopOf="@+id/iv_tableHeader" />
+
+        <TextView
+            android:id="@+id/tv_gateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/styleForLabels"
+            android:text="@string/gate_label"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_terminalLabel"
+            app:layout_constraintEnd_toStartOf="@+id/tv_seat"
+            app:layout_constraintStart_toStartOf="@+id/tv_gate"
+            app:layout_constraintTop_toTopOf="@+id/tv_terminalLabel" />
+
+        <TextView
+            android:id="@+id/tv_seatLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/styleForLabels"
+            android:text="@string/seat_label"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gateLabel"
+            app:layout_constraintEnd_toEndOf="@+id/iv_tableImage"
+            app:layout_constraintStart_toEndOf="@+id/tv_gate"
+            app:layout_constraintTop_toTopOf="@+id/tv_gateLabel" />
+
+
+
+        <TextView
+            android:id="@+id/tv_terminalNo"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            style="@style/styleForImageTableValue"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_tableImage"
+            app:layout_constraintStart_toStartOf="@+id/iv_tableImage"
+            app:layout_constraintTop_toTopOf="@+id/iv_tableImage"
+            tools:text="@string/terminal" />
+
+        <TextView
+            android:id="@+id/tv_gate"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            style="@style/styleForImageTableValue"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_terminalNo"
+            app:layout_constraintStart_toEndOf="@+id/tv_terminalNo"
+            app:layout_constraintTop_toTopOf="@+id/tv_terminalNo"
+            tools:text="@string/gate" />
+
+        <TextView
+            android:id="@+id/tv_seat"
+            style="@style/styleForImageTableValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gate"
+            app:layout_constraintEnd_toEndOf="@+id/iv_tableImage"
+            app:layout_constraintStart_toEndOf="@+id/tv_gate"
+            app:layout_constraintTop_toTopOf="@+id/tv_gate"
+            tools:text="@string/seat" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

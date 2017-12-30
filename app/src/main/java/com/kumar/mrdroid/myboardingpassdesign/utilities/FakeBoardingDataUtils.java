@@ -41,8 +41,8 @@ public class FakeBoardingDataUtils {
         bpi.boardingTime = new Timestamp(boardingMillis);
         bpi.departureTime = new Timestamp(departure);
         bpi.arrivalTime = new Timestamp(arrival);
-        bpi.departureTerminal = "3A";
-        bpi.departureGate = "33C";
+        bpi.departureTerminal = "2IT";
+        bpi.departureGate = "3B1";
         bpi.seatNumber = "1A";
         bpi.barCodeImageResource = R.drawable.plane;
 
