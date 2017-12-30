@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">MyBoardingPassDesign</string>
     <string name="passenger_label">PASSENGER</string>
-    <string name="passenger_name">MR. SOBHIT KUMAR</string>
+    <string name="passenger_name">MR. DEVELOPER</string>
     <string name="origin_label">ORIGIN</string>
     <string name="origin_code">PNQ</string>
     <string name="destination_label">DESTINATION</string>
