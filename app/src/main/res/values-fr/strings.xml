@@ -2,7 +2,7 @@
     <string name="app_name" translatable="false">MyBoardingPassDesign</string>
     <string name="passenger_label">PASSENGER</string>
     <string name="passenger_name" translatable="false">MR. DEVELOPER</string>
-    <string name="origin_label">SOURCE</string>
+    <string name="origin_label">ORIGIN</string>
     <string name="origin_code" translatable="false">PNQ</string>
     <string name="destination_label">DESTINATION</string>
     <string name="destination_code" translatable="false">DEL</string>
