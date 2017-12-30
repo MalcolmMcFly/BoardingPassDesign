@@ -16,8 +16,8 @@
     <string name="boarding_in_time" translatable="false">00:15</string>
     <string name="boarding_in_label">BOARDING IN</string>
     <string name="terminal_label">TERMINAL</string>
-    <string name="gate_label">GATE</string>
-    <string name="seat_label">SEAT</string>
+    <string name="gate_label">PORTE</string>
+    <string name="seat_label">SIÈGE</string>
     <string name="terminal" translatable="false">2</string>
     <string name="gate" translatable="false">58B</string>
     <string name="seat" translatable="false">24A</string>

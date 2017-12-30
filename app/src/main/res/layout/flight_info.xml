@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:text="@string/origin_label"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="50dp"
             android:layout_marginRight="50dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:text="@string/destination_label"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -138,11 +138,9 @@
             style="@style/styleForLabels"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="50dp"
-            android:layout_marginRight="50dp"
             android:layout_marginTop="16dp"
             android:text="@string/boarding_in_label"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_divider"
             app:layout_constraintTop_toBottomOf="@+id/iv_leftRectangle" />
 
         <TextView
