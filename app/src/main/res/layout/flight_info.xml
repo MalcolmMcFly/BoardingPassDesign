@@ -38,6 +38,7 @@
             android:id="@+id/iv_leftRectangle"
             android:layout_width="80dp"
             android:layout_height="50dp"
+            android:contentDescription="@string/origin_airport"
             app:layout_constraintEnd_toStartOf="@+id/tv_sourceLabel"
             app:layout_constraintStart_toEndOf="@+id/tv_sourceLabel"
             app:layout_constraintTop_toBottomOf="@+id/tv_sourceLabel"
@@ -47,6 +48,7 @@
             android:id="@+id/iv_rightRectangle"
             android:layout_width="80dp"
             android:layout_height="50dp"
+            android:contentDescription="@string/destination_airport"
             app:layout_constraintEnd_toStartOf="@+id/tv_destinationLabel"
             app:layout_constraintStart_toEndOf="@+id/tv_destinationLabel"
             app:layout_constraintTop_toBottomOf="@+id/tv_destinationLabel"
@@ -151,7 +153,6 @@
             app:layout_constraintStart_toStartOf="@+id/tv_boardingINLabel"
             app:layout_constraintTop_toBottomOf="@+id/tv_boardingINLabel"
             tools:text="@string/boarding_in_time" />
-
 
     </android.support.constraint.ConstraintLayout>
 </layout>
